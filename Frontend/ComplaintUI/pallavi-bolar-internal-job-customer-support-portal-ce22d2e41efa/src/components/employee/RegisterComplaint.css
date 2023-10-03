@@ -1,0 +1,73 @@
+.header-complaint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-family: "Jost", sans-serif;
+    margin-top: 10px;
+    color: #872746;
+}
+
+.subject {
+    font-size: 27px;
+    padding: 10px;
+    color: #872746;
+    margin-top: 20px;
+
+
+}
+
+.description{
+    font-size: 27px;
+    padding: 10px;
+    color: #872746;
+    margin-top: 20px;
+
+
+
+}
+
+.form-group{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.form-control{
+    margin-bottom: 30px;
+
+}
+
+
+.complaint-prompt{
+    margin-bottom: 100px;
+     text-align: center;
+     font-size: 20px;
+     margin-left:150px; 
+}
+
+.button-style-suggested{
+    background-color: #872746;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    margin-left: -20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+  .button-style-suggested:hover {
+    background-color: #872746;
+  }
+
+  .button-style-register{
+    background-color: #872746;
+    border-radius: 0.25rem;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    margin-left: 130px;
+    font-size: 20px;
+
+}

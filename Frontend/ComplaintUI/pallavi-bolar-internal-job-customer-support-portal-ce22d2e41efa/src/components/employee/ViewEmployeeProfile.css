@@ -1,0 +1,89 @@
+
+.manage-employee-profile-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-title {
+  color: #872746;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  font-family: "Jost", sans-serif;
+  margin-top: 10px;
+}
+
+.profile-subtitle {
+  font-size: 35px;
+  color: #872746;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Jost", sans-serif;
+  margin-bottom: 30px;
+}
+
+.profile-form {
+  background-color: #872746;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+
+.profile-actions {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 300px;
+}
+
+.update-button {
+  background-color: #872746;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  height: 80px;
+  width: 100px;
+}
+
+.label-border{
+  background-color: white;
+  border-radius: 15px;
+border: 1px solid #ccc;
+box-shadow: 0 4px 6px gray;
+}
+
+.profile-label{
+  font-size: 20px;
+}
+
+.profile-value{
+  font-size: 20px;
+}
+
+.label-border {
+  display: flex;
+  align-items: center; 
+}
+
+.label-container {
+  flex: 1; 
+  padding-right: 10px; 
+  text-align: right;
+}
+
+.value-container {
+  flex: 2; 
+}
+

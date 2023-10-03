@@ -1,0 +1,28 @@
+.gray {
+  background-color: grey !important;
+}
+
+.comment-card {
+  max-height: 100%;
+  margin-top: 20px;
+  background-color: #f8f9fa !important;
+}
+
+div.card-footer.comment-footer {
+  width: 100%;
+  margin-left: 0px !important;
+  max-height: 100%;
+  background-color: #f8f9fa !important;
+}
+
+.comment-button {
+  font-size: 16px !important;
+  padding: 10px 20px;
+}
+
+.comment-area {
+  flex: 1;
+  overflow-y: auto;
+  max-height: 100%;
+  background-color: #f8f9fa !important;
+}

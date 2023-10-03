@@ -1,0 +1,50 @@
+.custom-container {
+  height: 600px;
+  align: center;
+}
+
+img.img-fluid {
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  transform: scaleX(-1);
+}
+
+div.card.custom-card {
+  margin-top: 8px;
+  margin-right: 10px;
+  box-shadow: 2px 2px 8px black;
+  width: 500px !important;
+  height: 436px;
+}
+
+.login-header {
+  margin-bottom: 0px;
+}
+
+.colored-text {
+  font-size: 28px;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.login-text {
+  font-size: 28px;
+  justify-content: center;
+  font-weight: bold;
+  margin-left: 125px;
+}
+
+.custom-input {
+  font-size: 24px !important;
+  padding: 1rem !important;
+  font-family: "Jost", sans-serif !important;
+  font-weight: normal !important;
+}
+
+.custom-button {
+  background-color: #872746 !important;
+  color: white;
+  font-family: "Jost", sans-serif !important;
+  font-size: 20px !important;
+}

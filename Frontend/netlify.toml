@@ -1,0 +1,8 @@
+[build]
+base = "ComplaintUI/pallavi-bolar-internal-job-customer-support-portal-ce22d2e41efa"
+command = "export CI=false && npm install && npm run build && npm install -g serve"
+publish = "build/"
+
+[dev]
+  command = "serve -s build"
+  port = 8888

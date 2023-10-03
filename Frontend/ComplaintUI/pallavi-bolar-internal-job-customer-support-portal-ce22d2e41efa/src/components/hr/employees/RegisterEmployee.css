@@ -1,0 +1,33 @@
+.employee-form {
+    border: 1px solid #ccc; 
+    padding: 20px; 
+    background-color: #f5f5f5; 
+    /* background-color: #861f41; */
+    justify-content: center;
+  }
+
+  .empHeading{
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    color: #7e0d33;
+
+  }
+  .registerbtn{  margin-top: 10px;
+    padding: 10px 20px;
+    background-color:  #872746;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+
+  }
+.registerbtn:hover{
+  text-decoration: underline;
+  color: black;
+  background-color: #aaa;
+  
+}

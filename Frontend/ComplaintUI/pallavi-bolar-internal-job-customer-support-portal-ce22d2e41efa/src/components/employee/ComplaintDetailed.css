@@ -1,0 +1,147 @@
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  
+  .details-container {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    background: #872746;
+    
+  }
+  .details-table tr:hover {
+    background-color: transparent;
+  }
+  .details-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .details-table td {
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+  .details-table .text-sm {
+    font-size: 16px;
+  }
+  
+  .details-table .text-gray-500 {
+    color: #888;
+  }
+  
+  .details-table .complaint-no {
+    padding-top: 50px;
+    padding-left: 50px;
+    
+  }
+
+  .comment-body-container{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+
+  .border-style{
+    border: 1px solid #888;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+
+
+  .details-table .complaint-detail{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .details-table .complaint-status {
+    padding-left: 500px;
+  }
+  
+  .details-table .subject {
+    padding-top: 50px;
+    padding-left: 10px;
+  }
+  
+  .details-table .date-of-complaint {
+    padding-left: 600px;
+    padding-bottom: 30px;
+  }
+  
+  .details-table .complaint-body {
+    padding-top: 50px;
+    padding-left: 10px;
+  }
+  
+  .details-table .complaint-body-text {
+    padding-top: 15px;
+    padding-left: 30px;
+    margin-bottom: 25px;
+    padding-bottom: 60px;
+  }
+  
+  .comments-container {
+    width: 100%;
+    padding-left: 30px;
+    margin-top: 60px;
+    margin-bottom: 30px; 
+  }
+  
+  .comments-heading {
+    padding-top: 65px;
+    padding-left: 30px;
+    font-size: 20px;
+  }
+  
+  .comments-list {
+    padding-top: 25px;
+    padding-left: 30px;
+    margin-bottom: 100px;
+    padding-right: 100px;
+
+  }
+  
+  .comments-item {
+    margin-bottom: 60px;
+    padding: 10px;
+    font-weight: 500;
+    
+  }
+  
+  .comments-date {
+    margin-left: 150px;
+    margin-right: 320px;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  
+  .comments-text {
+    margin-left: 150px;
+    margin-right: 320px;
+    font-size: 25px;
+  }
+  .text-maroon-500 {
+  color: #872746;
+}
+
+  .goBack-button {
+    background-color: #872746;
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    margin: 100px;
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    margin-left: 700px;
+    margin-bottom: 200px;
+  }
+  

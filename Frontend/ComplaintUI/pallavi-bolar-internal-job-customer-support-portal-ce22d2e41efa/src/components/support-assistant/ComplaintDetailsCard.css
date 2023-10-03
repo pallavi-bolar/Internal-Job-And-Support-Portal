@@ -1,0 +1,75 @@
+.complaint-card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: "bold";
+  font-family: "Jost", sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.complaint-card-text {
+  font-size: 28px;
+  justify-content: center;
+  font-weight: bold;
+  margin-left: 16px;
+}
+
+.complaint-center-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center !important;
+  margin-top: 10px;
+  margin-bottom: 350px !important;
+}
+
+div.card.complaint-custom-card {
+  margin-top: 8px;
+  box-shadow: 2px 2px 8px black;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardd-header {
+  width: 100%;
+  font-size: 25px;
+  font-weight: "bold";
+  font-family: "Jost", sans-serif;
+  margin-bottom: 0px;
+}
+
+.div.card-header.complaint-card-header {
+  width: 100%;
+  font-size: 24px;
+}
+
+.complaint-id {
+  margin-left: 15px !important;
+}
+
+.set-status-button {
+  font-size: 20px !important;
+  padding: 0px 20px !important;
+  height: 30px !important;
+  background-color: #872746 !important;
+  color: white !important;
+  min-width: 80px !important;
+  margin-top: 5px !important;
+}
+
+.set-status-dropdown-item {
+  color: #000;
+  font-size: 18px;
+  min-width: 80px;
+}
+
+.complaint-body {
+  font-size: 20px !important;
+  align-items: left !important;
+}
+
+.complaint-details-table {
+  margin-top: 10px;
+}

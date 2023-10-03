@@ -1,0 +1,137 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    font-family: "Jost", sans-serif;
+    margin-top: 10px;
+  }
+
+  
+  
+  .bold-text {
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .colored-text {
+    color: #872746;
+    margin-bottom: 20px;
+  }
+
+  .center-text{
+    margin-left: -300px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 30px;
+  }
+
+  /* styles.css */
+
+/* Define a grid layout with three columns */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+  gap: 30px; /* Adjust the gap between columns */
+  margin-bottom: 50px;
+  margin-left: 90px;
+  
+ 
+}
+
+/* Style the job boxes */
+.job-box {
+ 
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: all 0.3s; /* Add a smooth transition */
+  
+}
+.no-match {
+ 
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: all 0.3s; /* Add a smooth transition */
+  color: #872746;
+  font-size: 30px;
+  
+}
+
+.button-style{
+    background-color: #872746;
+    border-radius: 0.25rem;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    margin-left: 130px;
+    font-size: 17px;
+
+}
+
+
+.custom-text-color {
+  color: #872746;
+}
+
+/* Style the expanded job box */
+.expanded {
+  transform: scale(1.1); /* Enlarge the expanded box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a stronger shadow */
+  z-index: 1; /* Bring the expanded box to the front */
+}
+
+.search-bar {
+  padding-left: 100px; /* Adjust the padding as needed */
+  padding-bottom: 80px;
+  padding-top: 25px;
+  display: flex; /* Add flex display to align items */
+  align-items: center; /* Center items vertically */
+}
+.subheading{
+  align-items: center;
+  padding-left: 400px;
+}
+.input-search-box {
+  width: 400px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.grid-background{
+  background: #872746;
+  padding:40px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  background-color: white; 
+  padding: 10px; 
+  border-radius: 5px; 
+}
+
+.pagination button {
+  background-color: #872746; 
+  color: white; 
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  margin: 0 5px;
+  font-weight: bold; 
+}
+
+.pagination button:hover {
+  background-color: #6e1b3b; 
+}
+
+.pagination button.active {
+  background-color: #6e1b3b; 
+}
