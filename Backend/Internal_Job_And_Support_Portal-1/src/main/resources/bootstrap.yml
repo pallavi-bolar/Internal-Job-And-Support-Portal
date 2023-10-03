@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: ijp
+  cloud:
+    vault:
+      host: localhost
+      port: 8200
+      scheme: http
+      token: hvs.9kOgvCU4DVYlgyWEblF8lDjq
+      
+     

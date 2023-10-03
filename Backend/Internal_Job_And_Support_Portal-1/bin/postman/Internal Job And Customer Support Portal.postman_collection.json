@@ -1,0 +1,648 @@
+{
+	"info": {
+		"_postman_id": "21f6d450-2f61-4aa1-9cdb-af1486492dd5",
+		"name": "Internal Job And Customer Support Portal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15758921"
+	},
+	"item": [
+		{
+			"name": "HR",
+			"item": [
+				{
+					"name": "Job Details",
+					"item": [
+						{
+							"name": "Add Job Details",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"jobTitle\": \"Sales Manager\",\r\n\"jobDescription\": \"Achieving growth and hitting sales targets by successfully managing the sales team\",\r\n\"department\": \"Sales\",\r\n\"qualification\": \"B.Com, M.Com\",\r\n\"jobLocation\": \"Mumbai, Delhi\",\r\n\"applicationDeadline\": \"2023-08-30\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/api/job-details/createJobDetails",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"job-details",
+										"createJobDetails"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "View Jobs",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/api/job-details/viewAllJobDetails",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"job-details",
+										"viewAllJobDetails"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "View Jobs By ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/api/job-details/viewJobsById/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"job-details",
+										"viewJobsById",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Job Details",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"jobTitle\": \"Sales Manager\",\r\n\"jobDescription\": \"Achieving growth and hitting sales targets by successfully managing the sales team\",\r\n\"department\": \"Sales\",\r\n\"qualification\": \"B.Com, M.Com\",\r\n\"jobLocation\": \"Mumbai, Thane\",\r\n\"applicationDeadline\": \"2023-08-30\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/api/job-details/updateJobDetails/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"job-details",
+										"updateJobDetails",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Jobs",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/api/job-details/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"job-details",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Job Application",
+					"item": [
+						{
+							"name": "Update Job Application Status",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"newStatus\":\"SELECTED_FOR_INTERVIEW\"\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/api/job-applications/11/updateStatus",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"job-applications",
+										"11",
+										"updateStatus"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Track Applications By Employee ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/api/job-applications/track-applied-applications/52",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"job-applications",
+										"track-applied-applications",
+										"52"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Register Employee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullName\":\"Utkarsha Bhosale\",\r\n    \"emailId\":\"utkarshabhosale@gmail.com\",\r\n\t\"phoneNo\":\"9167555460\",\r\n\t\"gender\":\"Female\",\r\n\t\"dateOfBirth\":\"2000-01-06\",\r\n    \"address\":\"Mumbai\",\r\n    \"dateOfJoining\":\"2021-02-15\",\r\n\t\"password\":\"utka0601\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/employees/registerEmployee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"employees",
+								"registerEmployee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View Employee By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/employees/202",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"employees",
+								"202"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View All Employees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/employees/viewAllEmployees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"employees",
+								"viewAllEmployees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View Employees By Name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/employees/searchByName?name=Utkarsha%20Bhosale",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"employees",
+								"searchByName"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Utkarsha%20Bhosale"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Complaint Module",
+			"item": [
+				{
+					"name": "Support Assistant",
+					"item": [
+						{
+							"name": "Get All Complaints",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/api/support-assistant/complaints",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"support-assistant",
+										"complaints"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Status By Complaint ID and status in query params",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/api/support-assistant/complaints/1/update-status?status=UNDER_REVIEW",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"support-assistant",
+										"complaints",
+										"1",
+										"update-status"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "UNDER_REVIEW"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Comments By Complaint ID",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/api/support-assistant/complaints/1/add-comment?comment=Details Added. Forward it",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"support-assistant",
+										"complaints",
+										"1",
+										"add-comment"
+									],
+									"query": [
+										{
+											"key": "comment",
+											"value": "Details Added. Forward it"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Comments By Complaint ID and Comment Index in params",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/api/support-assistant/complaints/1/update-comment/2?updatedComment=Forwarded",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"support-assistant",
+										"complaints",
+										"1",
+										"update-comment",
+										"2"
+									],
+									"query": [
+										{
+											"key": "updatedComment",
+											"value": "Forwarded"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Complaints By Employee Name",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/api/complaints/employeeByName/John%20Doey",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"complaints",
+										"employeeByName",
+										"John%20Doey"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Complaints By Employee ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/api/complaints/employee/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"complaints",
+										"employee",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "FAQs",
+					"item": [
+						{
+							"name": "Get All FAQs",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/api/faqs/all-faqs",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"faqs",
+										"all-faqs"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Suggested FAQs",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/api/complaints/suggestedFaqs/352",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"complaints",
+										"suggestedFaqs",
+										"352"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create FAQs",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"question\": \"do you have a problem with job application submission\",\r\n    \"answer\": \"the job application submission issue resolution is suggested here\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/api/faqs/create-faqs",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"faqs",
+										"create-faqs"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Submit Complaints By Employee ID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"subject\":\"Job application\",\r\n    \"description\":\"demo for job application\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/complaints/submit/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"complaints",
+								"submit",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "View Open Job Applications",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/job-applications/view-open-applications",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"job-applications",
+								"view-open-applications"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Apply For Job",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/job-applications/apply-for-job/52/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"job-applications",
+								"apply-for-job",
+								"52",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Track Applied Job Application",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/job-applications/track-applied-applications/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"job-applications",
+								"track-applied-applications",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

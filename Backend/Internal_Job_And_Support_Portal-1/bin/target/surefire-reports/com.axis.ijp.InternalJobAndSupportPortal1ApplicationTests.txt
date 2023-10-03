@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.axis.ijp.InternalJobAndSupportPortal1ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.249 s - in com.axis.ijp.InternalJobAndSupportPortal1ApplicationTests
